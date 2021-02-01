@@ -1,6 +1,4 @@
-
-
-public class ATM {
+class ATM {
     public int countBanknotes(int sum){
         int[] banknotes = {500,200,100,50,20,10,5,2,1};
         int result = 0;
@@ -9,15 +7,6 @@ public class ATM {
 
             result += sum/banknotes[i];
             sum%=banknotes[i];
-            /*
-            i=5, 10/10=1, result = 1;
-            i=6, 10/5 = 2, result = 1+2;
-            i=7, 10/2=5,result = 1+2+5,
-            i=8, 10/1=10, result = 1+2+5+10;
-
-
-            */
-
             i++;
         }
 
